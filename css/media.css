@@ -1,0 +1,208 @@
+@media only screen and (max-width: 1320px) {
+    .container {
+        max-width: 1020px;
+    }
+    .main-flex .left-info,
+    .main-flex .right-picture {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1020px) {
+    .dark-div {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 1020px) {
+    .drop-a:hover ~ .dropdown{
+        display: none;
+    }
+    .container {
+        max-width: 720px;
+    }
+    .hamburger-menu {
+        width: 80px;
+        padding: 35px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+        transition: .2s;
+        cursor: pointer;
+    }
+    .hamburger-menu div {
+        width: 34px;
+        height: 1px;
+        background-color: #fff;
+    }
+    .hamburger-menu:hover {
+        background-color: rgba(150,150,150,0.2);
+        transition: all 0.1s;
+    }
+    .hamburger-menu:hover .top-bun {
+        animation: top-bun 800ms ease-in-out infinite;
+    }.hamburger-menu:hover .meat {
+        animation: meat 800ms ease-in-out infinite;
+        animation-delay: 200ms;
+    }.hamburger-menu:hover .bottom-bun {
+        animation: bottom-bun 800ms ease-in-out infinite;
+        animation-delay: 400ms;
+    }
+    @keyframes top-bun {
+        0% { width: 34px;}
+        50% { width: 17px;}
+        100% { width: 34px;}
+    } @keyframes meat {
+        0% { width: 34px;}
+        50% { width: 17px;}
+        100% { width: 34px;}
+    } @keyframes bottom-bun {
+        0% { width: 34px;}
+        50% { width: 17px;}
+        100% { width: 34px;}
+    }
+
+    .header-ul {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -260px;
+        width: 260px;
+        height: 100vh;
+        overflow-y: auto;
+        background-color: rgb(255, 255, 255);
+        transition: all 300ms;
+        z-index: 9999;
+    }
+    .pernUl-logo {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 25px;
+        height: 90px;
+    }
+    .pernUl-logo img{
+        height: 100%;
+    }
+    .pernUl-logo .close-icon {
+        display: block;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        padding: 7px;
+    }
+    .pernUl-logo .close-icon:hover {
+        animation: closeAnim 600ms ease-out infinite;
+    }
+    @keyframes closeAnim {
+        0% {padding-right: 7px;}
+        50% {padding-right: 12px;}
+        100% {padding-right: 7px;}
+    }
+    .header-ul li a {
+        color: #242424;
+        font-size: 12px;
+        font-weight: 800;
+        padding: 20px 25px;
+        border-top: 1px solid rgba(0,0,0,0.07);
+    }
+    .header-ul li a::before {
+        display: none;
+    }
+    .header-ul li .no-hover:hover {
+        color: #000;
+        cursor: auto;
+    }
+    .header-ul .contact-li {
+        padding-right: 0;
+    }.header-ul .ico-li {
+        padding-left: 0;
+    }.header-ul .ico-li2 {
+        display: none;
+    }
+    .header-ul li a .insta2 {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .header-ul .ico-li i,
+    .header-ul .ico-li2 i {
+        display: inline-block;
+        padding: 15px 17px;
+        font-size: 14px;
+        transition: all .2s;
+    }
+    .header-ul .ico-li i:hover,
+    .header-ul .ico-li2 i:hover {
+        background-color: rgba(120,120,120,0.15);
+        cursor: pointer;
+        color: #D93333;
+    }
+
+    .main-section {
+        height: auto;
+    }
+    .main-flex .container {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .main-flex .left-info {
+        margin-top: 120px;
+    }
+    .left-info-in {
+        text-align: center;
+    }
+    .left-info-in h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .left-info-in p {
+        max-width: 100%;
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+    .main-flex .left-info,
+    .main-flex .right-picture {
+        width: 100%;
+        justify-content: center;
+    }
+    .right-picture img {
+        max-width: 300px;
+        margin-top: 50px;
+    }
+
+    .top-title h1,
+    .left-alive h1 {
+        font-size: 40px;
+        font-weight: 45px;
+    }
+    .left-alive h5 {
+        font-size: 18px;
+    }
+    .left-alive p {
+        font-size: 15px;
+    }
+    .bottom-boxs,
+    .sct3-flex {
+        flex-direction: column;
+    }
+    .btm-box {
+        padding: 30px 10px;
+    }
+
+    .left-alive,
+    .right-aliveImg {
+        width: 100%;
+    }
+    .right-aliveImg {
+        height: 500px;
+    }
+
+}
+@media only screen and (max-width: 720px) {
+    .container {
+        max-width: 520px;
+    }
+    .left-alive {
+        padding: 100px 20px 100px 20px;
+    }
+}
