@@ -6,6 +6,39 @@
     .main-flex .right-picture {
         width: 50%;
     }
+    .all-cateBox {
+        width: 32%;
+        height: 250px;
+    }
+    .swiper {
+        width: 50% !important;
+        margin-top: 70px;
+    }
+    .swiper-title {
+        width: 50% !important;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+    .swiper-slide {
+        width: 387px !important;
+        height: 500px !important;
+    }
+    .fremwork-select .hg-btn {
+        min-width: 80px;
+    }
+    .hg-btn .span1 {
+        font-size: 20px;
+    }
+    .skills-bar {
+        justify-content: center;
+    }
+    .skills-box {
+        width: 48%;
+    }
+    .email-div,
+    .modal-div {
+        width: 1000px;
+    }
 }
 @media only screen and (min-width: 1020px) {
     .dark-div {
@@ -171,9 +204,11 @@
     }
 
     .top-title h1,
-    .left-alive h1 {
+    .left-alive h1,
+    .swiper-title h1 {
         font-size: 40px;
         font-weight: 45px;
+        line-height: normal;
     }
     .left-alive h5 {
         font-size: 18px;
@@ -197,6 +232,139 @@
         height: 500px;
     }
 
+    .select-cate button {
+        padding: 10px;
+    }
+    .all-cate {
+        justify-content: center;
+    }
+    .all-cateBox {
+        width: 340px;
+    }
+    .one-lpp,
+    .two-lpp,
+    .thre-lpp,
+    .four-lpp{
+        font-size: 50px !important;
+        line-height: 50px !important;
+    }
+    .thre-lpp,
+    .four-lpp {
+        line-height: 45px !important;
+    }
+    .five-lpp {
+        margin-left: 0 !important;
+    }
+
+    .swiper-flex {
+        flex-direction: column;
+    } 
+    .swiper {
+        width: 100% !important;
+        margin-top: 0;
+    }
+    .swiper-slide {
+        width: 287px !important;
+        height: 400px !important;
+    }
+    .swiper-title {
+        width: 100% !important;
+    }
+    .swiper-title h3 {
+        line-height: normal;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .section7 {
+        height: 550px;
+    }
+    .fremwork-select {
+        height: 350px;
+    }
+    .fremwork-select .hg-btn {
+        min-width: 50px;
+    }
+    .hg-btn span,
+    .hd-div h3 {
+        font-size: 20px;
+    }
+    .hg-btn .span1,
+    .hd-div p {
+        font-size: 16px;
+    }
+    .hd-div h1 {
+        line-height: 20px;
+    }
+    .hd-div p {
+        line-height: 15px;
+    }
+    .team-flex {
+        flex-wrap: wrap;
+    }
+    .team-box {
+        width: 50%;
+        margin: 20px 0;
+    }
+    .modal-center {
+        min-height: 1450px;
+    }
+    .modal-div {
+        width: 700px;
+        flex-direction: column;
+    }
+    .modal-div label i {
+        color: #000;
+        font-size: 30px;
+    }
+    .modal-div .modal-title,
+    .modal-div .modal-img {
+        width: 100%;
+
+    }
+
+    .section10 {
+        padding-bottom: 350px;
+    }
+    .hotspots-div {
+        background-size: cover;
+        height: 400px;
+    }
+    .email-div {
+        width: 100%;
+        padding: 50px 10px;
+    }
+    .form-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+    .form-flex > div {
+        width: 100%;
+    }
+    .left-message input {
+        padding: 20px;
+        font-size: 16px;
+    }
+    .right-message textarea {
+        height: 150px;
+        padding: 20px;
+        font-size: 16px;
+    }
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .footer .container > div {
+        width: 100%;
+    }
+    .footer-div-ico {
+        display: flex;
+        justify-content: center;
+    }
+    .copyright {
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 720px) {
     .container {
@@ -204,5 +372,52 @@
     }
     .left-alive {
         padding: 100px 20px 100px 20px;
+    }
+    .all-cateBox {
+        width: 100%;
+    }
+    .back-hd {
+        padding: 15px;
+    }
+    .fremwork-select {
+        height: 250px;
+    }
+    .fremwork-select .hg-btn {
+        min-width: 40px;
+        padding: 20px 0;
+    }
+    .hd-div h3,
+    .hd-div p {
+        white-space: inherit;
+    }
+    .hg-btn span,
+    .hd-div h3 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .hg-btn .span1,
+    .hd-div p {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .skills-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-box {
+        width: 100%;
+    }
+    .progres-bar {
+        width: 140px;
+        height: 140px;
+    }
+    .team-box {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .subcribe-name,
+    .subcribe-email {
+        width: 100%;
     }
 }
